@@ -6,16 +6,20 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: #cccc57;
+  --color-secondary: #333333;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer components {
+  .bottomBorder {
+    @apply border-secondary border-b max-w-10 mb-1 pb-1;
+  }
+  .fillter-white {
+    filter: brightness(100%) saturate(100%) invert(100%) sepia(54%) saturate(2%)
+      hue-rotate(133deg) brightness(110%) contrast(100%);
+  }
+  .active {
+    color: #cccc57;
   }
 }
 
