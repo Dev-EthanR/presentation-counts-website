@@ -12,14 +12,10 @@ const NavBar = ({ isOpen, setIsOpen }: Props) => {
   const navLinks = () => {
     return (
       <nav className="text-white col-span-full" id="menu">
-        <div className="flex flex-col items-start gap-6 lg:flex-row lg:text-xl text-2xl">
+        <div className="flex gap-6 lg:flex-row lg:text-xl text-2xl lg:justify-end lg:flex-wrap">
           <Link href="/">Home</Link>
-          <Link href="about">
-            Property Styling <div className="text-center">Gallery</div>{" "}
-          </Link>
-          <Link href="services">
-            Pre Sale Renovation <div className="text-center">Gallery</div>
-          </Link>
+          <Link href="about">Property Styling Gallery </Link>
+          <Link href="services">Pre Sale Renovation Gallery</Link>
           <Link href="portfolio">Testimonials</Link>
           <Link href="contact">Contact</Link>
           <Link href="contact">About Us</Link>

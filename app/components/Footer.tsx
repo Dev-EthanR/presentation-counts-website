@@ -3,7 +3,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-size-[83px] h-88 lg:h-40 w-full text-2xl flex flex-col py-2 lg:py-8 text-white bg-black">
+    <footer className="bg-size-[83px] h-88 lg:h-40 w-full text-2xl flex flex-col py-2 lg:py-8 text-white bg-background">
       <h2 className="text-center italic text-xl lg:text-3xl w-full whitespace-nowrap">
         Experienced.{" "}
         <span className="text-primary">Professional. Trusted.</span>
@@ -28,7 +28,7 @@ const Footer = () => {
       </ul>
       <div className="flex flex-col md:flex-row justify-between md:items-end max-w-375 w-full mx-auto">
         <div className="flex flex-col pl-12 pt-2 lg:flex-row">
-          <span className="text-base bottomBorder max-w-24 lg:border-b-0 lg:border-r lg:pr-3 lg:max-w-28">
+          <span className="text-base bottomBorder whitespace-nowrap lg:whitespace-normal lg:w-full lg:border-b-0 lg:border-r lg:pr-3 ">
             03 9482 2722
           </span>
           <span className="text-base bottomBorder lg:border-b-0 lg:pl-3 lg:max-w-28">

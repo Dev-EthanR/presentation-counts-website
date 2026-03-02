@@ -12,7 +12,7 @@ const Header = () => {
     <header
       className={`bg-size-[83px]  flex ${
         isOpen && "min-h-[120dvh] items-start pt-12"
-      } min-h-30 text-2xl pt-4 md:px-4 lg:sticky top-0 z-50 bg-black`}
+      } min-h-30 text-2xl pt-4 md:px-4 lg:sticky top-0 z-50 bg-background`}
     >
       <div
         className={`grid grid-cols-3 gap-y-7 lg:flex lg:items-center mx-auto max-w-360`}
@@ -30,7 +30,7 @@ const Header = () => {
               className="select-none px-4 lg:px-0 w-90"
               src="/images/logo.png"
               alt="Presentation Counts Logo"
-              width={100}
+              width={500}
               height={100}
             />
           </Link>

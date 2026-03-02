@@ -1,13 +1,9 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
   --color-primary: #cccc57;
   --color-secondary: #333333;
+  --color-background: #060608;
 }
 
 @layer components {
@@ -24,7 +20,7 @@
 }
 
 body {
-  background: var(--background);
+  background: #f6f3ec;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
