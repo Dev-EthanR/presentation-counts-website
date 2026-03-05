@@ -34,7 +34,7 @@ const Header = () => {
               height={100}
             />
           </Link>
-          <span className="text-black uppercase tracking-widest text-sm">
+          <span className="text-secondary uppercase tracking-widest text-sm font-semibold">
             Property StyleLists
           </span>
         </div>
