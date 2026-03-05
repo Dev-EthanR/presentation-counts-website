@@ -30,7 +30,7 @@ const NavBar = ({ isOpen, setIsOpen }: Props) => {
   const navLinks = () => {
     return (
       <nav className="text-[#F5F5F2] col-span-full " id="menu">
-        <div className="flex gap-6 lg:flex-row lg:text-xl text-2xl lg:justify-end lg:flex-wrap">
+        <div className="flex gap-4 lg:flex-row lg:text-xl lg:justify-end xl:justify-start text-2xl lg:flex-wrap">
           {links.map((link) => (
             <Link
               key={link.href}
