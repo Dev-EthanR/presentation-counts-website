@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
+:root {
+  --primary-color: #cccc57;
+  --secondary-color: #333333;
+}
+
 @theme inline {
-  --color-primary: #cccc57;
-  --color-secondary: #333333;
+  --color-primary: var(--primary-color);
+  --color-secondary: var(--secondary-color);
   --color-background: #060608;
 }
 
@@ -16,6 +21,16 @@
   }
   .active {
     color: #cccc57;
+  }
+  .linear-bg {
+    background: linear-gradient(
+      90deg,
+      var(--secondary-color) 0%,
+      var(--secondary-color) 20%,
+      var(--primary-color) 50%,
+      var(--secondary-color) 80%,
+      var(--secondary-color) 100%
+    );
   }
 }
 

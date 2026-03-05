@@ -33,9 +33,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="flex flex-col h-dvh">
           <Header />
-          <div className="grow flex justify-center items-center">
-            {children}
-          </div>
+          <div className="">{children}</div>
           <Footer />
         </div>
       </body>
