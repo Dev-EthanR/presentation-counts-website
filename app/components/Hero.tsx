@@ -4,7 +4,7 @@ const Hero = () => {
     <section className="w-full ">
       <div>
         <Image
-          src="/images/gallerys/image2.jpg"
+          src="/images/gallery/image1.jpg"
           alt=""
           width={8000}
           height={8000}

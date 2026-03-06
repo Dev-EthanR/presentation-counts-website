@@ -31,9 +31,9 @@ export default function RootLayout({
     <html lang="en">
       <link rel="icon" href="/favicon.ico" sizes="any" />
       <body className={inter.className}>
-        <div className="flex flex-col h-dvh">
+        <div className="flex flex-col">
           <Header />
-          <div className="">{children}</div>
+          <main className="flex-1">{children}</main>
           <Footer />
         </div>
       </body>
