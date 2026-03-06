@@ -5,25 +5,28 @@ import { links } from "./Navbar";
 
 const Footer = () => {
   return (
-    <footer className="bg-size-[83px] h-88 lg:h-40 w-full text-2xl flex flex-col py-2 lg:py-8 text-white bg-secondary">
-      <h2 className="text-center italic text-xl lg:text-3xl w-full whitespace-nowrap">
+    <footer className="bg-size-[83px] h-full lg:h-40 w-full text-2xl flex flex-col py-4 lg:py-8 text-white bg-secondary">
+      <h2 className="text-center italic text-xl lg:text-3xl w-full">
         Experienced.{" "}
         <span className="text-primary">Professional. Trusted.</span>
       </h2>
 
       <ul className="flex flex-col lg:hidden text-base pl-12 pt-4">
         {links.map((link) => (
-          <li key={link.href} className="hover:brightness-85 bottomBorder">
+          <li
+            key={link.href}
+            className="hover:brightness-85 bottomBorder whitespace-nowrap"
+          >
             <Link href={link.href}>{link.name}</Link>
           </li>
         ))}
       </ul>
-      <div className="flex flex-col md:flex-row justify-between md:items-end max-w-375 w-full mx-auto">
-        <div className="flex flex-col pl-12 pt-2 lg:flex-row">
-          <span className="text-base bottomBorder whitespace-nowrap lg:whitespace-normal lg:w-full lg:border-b-0 lg:border-r lg:pr-3 ">
+      <div className="flex flex-col  md:flex-row justify-between  max-w-375 w-full mx-auto">
+        <div className="flex flex-col pl-12 pt-2 lg:block">
+          <span className="text-base bottomBorder whitespace-nowrap lg:whitespace-normal lg:w-full lg:border-b-0 lg:border-r lg:pr-3 border-white ">
             03 9482 2722
           </span>
-          <span className="text-base bottomBorder lg:border-b-0 lg:pl-3 lg:max-w-28">
+          <span className="text-base bottomBorder lg:border-b-0 lg:pl-3 lg:max-w-28 border-white">
             info@presentationcounts.com.au
           </span>
         </div>
