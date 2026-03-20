@@ -1,11 +1,27 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Cormorant_Garamond, Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import localFont from "next/font/local";
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  variable: "--font-cormorant",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+});
 
 const inter = Inter({
   subsets: ["latin"],
+});
+
+const customFont = localFont({
+  src: "../public/fonts/Shelley Script LT Std Regular/Shelley Script LT Std Regular.otf",
+  variable: "--font-shelley",
 });
 
 export const metadata: Metadata = {
@@ -29,8 +45,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="/favicon.ico" sizes="any" />
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} ${customFont.variable} ${cormorant.variable} ${montserrat.variable}`}
+      >
         <div className="flex flex-col">
           <Header />
           <main className="flex-1">{children}</main>

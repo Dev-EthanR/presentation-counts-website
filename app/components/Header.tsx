@@ -11,36 +11,30 @@ const Header = () => {
   return (
     <>
       <header
-        className={`flex ${
-          isOpen && "min-h-[120dvh] items-start pt-12"
+        className={` ${
+          isOpen && "min-h-[120dvh]  pt-12"
         } min-h-30 text-2xl pt-4 md:px-4 linear-bg pb-4`}
       >
-        <div
-          className={`grid grid-cols-3 gap-y-7 lg:flex lg:items-center mx-auto max-w-360`}
-        >
+        <div className={`grid grid-cols-3 gap-y-7 lg:flex lg:items-center `}>
           <Image
-            src="/images/icon.jpg"
+            src="/images/icon.png"
             alt="logo"
             className="w-20 h-20"
             width={100}
             height={100}
           />
-          <div className="flex flex-col items-center ">
+          <div className="flex flex-col items-center justify-center lg:col-start-1 lg:col-span-3 mx-auto">
             <Link
               href="/"
               className="col-span-2 self-center pr-12"
               tabIndex={-1}
             >
-              <Image
-                className="select-none px-4 lg:px-0 w-150 "
-                src="/images/logo.png"
-                alt="Presentation Counts Logo"
-                width={900}
-                height={100}
-              />
+              <span className="font-shelley text-6xl text-center text-white">
+                Presentation Counts
+              </span>
             </Link>
             <span className="text-secondary uppercase tracking-widest text-sm font-semibold">
-              Property StyleLists
+              Property Stylists
             </span>
           </div>
           <div className="lg:hidden">

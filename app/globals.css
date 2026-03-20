@@ -10,6 +10,10 @@
   --color-primary: var(--primary-color);
   --color-secondary: var(--secondary-color);
   --color-background: var(--background-color);
+  --color-warmwhite: #f5f0e8;
+  --font-shelley: var(--font-shelley);
+  --font-montserrat: var(--font-montserrat);
+  --font-cormorant: var(--font-cormorant);
 }
 
 @layer components {
