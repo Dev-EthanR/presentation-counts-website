@@ -55,7 +55,7 @@ const NavBar = ({ isOpen, setIsOpen }: Props) => {
       <div className="lg:hidden flex justify-end items-start ">
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className={`pr-5 ${isOpen && "absolute top-0 right-0 z-40 mt-6"}`}
+          className={`${isOpen && "absolute top-0 right-0 z-40 mt-6 pr-5"}`}
           aria-expanded={isOpen}
           aria-controls="menu"
         >

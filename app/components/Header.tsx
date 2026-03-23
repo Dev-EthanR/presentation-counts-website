@@ -4,6 +4,7 @@ import useLockBodyScroll from "../hooks/useLockBodyScroll";
 import Link from "next/link";
 import Image from "next/image";
 import NavBar from "./Navbar";
+import clsx from "clsx";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -11,11 +12,38 @@ const Header = () => {
   return (
     <>
       <header
-        className={` ${
-          isOpen && "min-h-[120dvh]  pt-12"
-        } min-h-30 text-2xl pt-4 md:px-4 linear-bg pb-4`}
+        // className={` ${
+        //   isOpen && "min-h-[120dvh]  pt-12"
+        // } min-h-30 text-2xl pt-4 md:px-4 linear-bg pb-4 relative bg-black`}
+        className={clsx(
+          "bg-linear-to-r from-black via-[#8c7a2b] to-black text-white",
+          isOpen && "min-h-[120dvh]  pt-12",
+        )}
       >
-        <div className={`grid grid-cols-3 gap-y-7 lg:flex lg:items-center `}>
+        <div className="flex items-center justify-between px-6 py-4">
+          <Image
+            src="/images/icon.png"
+            alt="logo"
+            className="size-12 lg:size-20 "
+            width={80}
+            height={80}
+          />
+          <div className="text-center">
+            <h1 className="font-shelley text-3xl lg:text-6xl tracking-wide text-white">
+              Presentation Counts
+            </h1>
+            <p className="text-yellow-200/80 text-xs tracking-[0.3em] uppercase mt-1">
+              {" "}
+              Property Stylists
+            </p>
+          </div>
+          <div className="w-15">
+            <div className="lg:hidden">
+              <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
+            </div>
+          </div>
+        </div>
+        {/* <div className={`grid grid-cols-3 gap-y-7 lg:flex lg:items-center `}>
           <Image
             src="/images/icon.png"
             alt="logo"
@@ -40,7 +68,8 @@ const Header = () => {
           <div className="lg:hidden">
             <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
           </div>
-        </div>
+        </div> */}
+        <div className="h-0.5 bg-linear-to-r from-transparent via-yellow-400 to-transparent"></div>
       </header>
       <div className="hidden lg:flex justify-center py-4 bg-secondary lg:sticky top-0 z-50 ">
         <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
