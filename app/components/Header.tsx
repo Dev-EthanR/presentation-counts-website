@@ -15,6 +15,7 @@ const Header = () => {
         // className={` ${
         //   isOpen && "min-h-[120dvh]  pt-12"
         // } min-h-30 text-2xl pt-4 md:px-4 linear-bg pb-4 relative bg-black`}
+        aria-label="Site header"
         className={clsx(
           "bg-linear-to-r from-black via-[#8c7a2b] to-black text-white",
           isOpen && "min-h-[120dvh]  pt-12",
@@ -23,15 +24,15 @@ const Header = () => {
         <div className="flex items-center justify-between px-6 py-4">
           <Image
             src="/images/icon.png"
-            alt="logo"
+            alt="Presentation Counts ornament"
             className="size-12 lg:size-20 "
             width={80}
             height={80}
           />
           <div className="text-center">
-            <h1 className="font-shelley text-3xl lg:text-6xl tracking-wide text-white">
+            <div className="font-shelley text-3xl lg:text-6xl tracking-wide text-white">
               Presentation Counts
-            </h1>
+            </div>
             <p className="text-yellow-200/80 text-xs tracking-[0.3em] uppercase mt-1">
               {" "}
               Property Stylists
