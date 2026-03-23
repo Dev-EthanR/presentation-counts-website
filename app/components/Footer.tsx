@@ -6,11 +6,6 @@ import { links } from "./Navbar";
 const Footer = () => {
   return (
     <footer className="bg-size-[83px] h-full lg:h-40 w-full text-2xl flex flex-col py-4 lg:py-8 text-white bg-secondary">
-      <h2 className="text-center italic text-xl lg:text-3xl w-full">
-        Experienced.{" "}
-        <span className="text-primary">Professional. Trusted.</span>
-      </h2>
-
       <ul className="flex flex-col lg:hidden text-base pl-12 pt-4">
         {links.map((link) => (
           <li
