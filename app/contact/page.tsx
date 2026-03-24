@@ -4,7 +4,7 @@ import Values from "../about/components/Values";
 
 const ContactPage = () => {
   return (
-    <main className="bg-[#111] text-white">
+    <main className=" text-white">
       <div className="py-16 text-center">
         <p className="text-[10px] tracking-[0.25em] uppercase text-yellow-400/80 mb-3">
           Melbourne Property Styling
