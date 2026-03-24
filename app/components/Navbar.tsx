@@ -16,8 +16,8 @@ export const links: Link[] = [
   { name: "Home", href: "/" },
   { name: "Styling Gallery", href: "/property-styling-gallery" },
   {
-    name: "Renovation Gallery",
-    href: "/pre-sale-renovation-gallery",
+    name: "Trade Gallery",
+    href: "/trade-gallery",
   },
   { name: "Testimonials", href: "/testimonials" },
   { name: "Contact", href: "/contact" },

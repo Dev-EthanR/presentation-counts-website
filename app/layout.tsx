@@ -46,9 +46,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${customFont.variable} ${cormorant.variable} ${montserrat.variable}`}
+        className={`${inter.className} ${customFont.variable} ${cormorant.variable} ${montserrat.variable} `}
       >
-        <div className="flex flex-col">
+        <div className="flex flex-col min-h-screen bg-[#21241e]">
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
