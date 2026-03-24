@@ -1,9 +1,10 @@
 import Table from "../about/components/Table";
+import Team from "../about/components/Team";
 import Values from "../about/components/Values";
 
 const ContactPage = () => {
   return (
-    <main className="text-white">
+    <main className="bg-[#111] text-white">
       <div className="py-16 text-center">
         <p className="text-[10px] tracking-[0.25em] uppercase text-yellow-400/80 mb-3">
           Melbourne Property Styling
@@ -12,7 +13,7 @@ const ContactPage = () => {
           About Us
         </h1>
         <div className="w-20 h-px bg-yellow-400/70 mx-auto my-4" />
-        <p className="text-[10px] tracking-[0.18em] uppercase text-white/60">
+        <p className="text-[10px] tracking-[0.18em] uppercase text-white/40">
           30+ years transforming Melbourne properties
         </p>
       </div>
@@ -26,17 +27,8 @@ const ContactPage = () => {
         </p>
 
         <Table />
-
-        <p className="text-[10px] tracking-[0.2em] uppercase text-yellow-400/80 mb-4">
-          Our Approach
-        </p>
-        <p className="text-sm leading-loose text-white/70 mb-14">
-          A professionally styled home stands out online and at inspections,
-          helping attract more interest and maximise your sale result. We
-          understand Melbourne&apos;s property market and know exactly what
-          buyers are looking for in every suburb and price bracket.
-        </p>
         <Values />
+        <Team />
       </div>
     </main>
   );

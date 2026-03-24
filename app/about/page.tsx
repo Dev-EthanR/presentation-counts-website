@@ -1,4 +1,5 @@
 import Table from "./components/Table";
+import Team from "./components/Team";
 import Values from "./components/Values";
 
 const AboutPage = () => {
@@ -26,17 +27,8 @@ const AboutPage = () => {
         </p>
 
         <Table />
-
-        <p className="text-[10px] tracking-[0.2em] uppercase text-yellow-400/80 mb-4">
-          Our Approach
-        </p>
-        <p className="text-sm leading-loose text-white/70 mb-14">
-          A professionally styled home stands out online and at inspections,
-          helping attract more interest and maximise your sale result. We
-          understand Melbourne&apos;s property market and know exactly what
-          buyers are looking for in every suburb and price bracket.
-        </p>
         <Values />
+        <Team />
       </div>
     </main>
   );
