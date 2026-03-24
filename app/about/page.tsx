@@ -12,7 +12,7 @@ const AboutPage = () => {
           About Us
         </h1>
         <div className="w-20 h-px bg-yellow-400/70 mx-auto my-4" />
-        <p className="text-[10px] tracking-[0.18em] uppercase text-white/40">
+        <p className="text-[10px] tracking-[0.18em] uppercase text-white/60">
           30+ years transforming Melbourne properties
         </p>
       </div>
