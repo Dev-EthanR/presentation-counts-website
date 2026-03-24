@@ -1,9 +1,9 @@
-import Table from "./components/Table";
-import Values from "./components/Values";
+import Table from "../about/components/Table";
+import Values from "../about/components/Values";
 
-const AboutPage = () => {
+const ContactPage = () => {
   return (
-    <main className="bg-[#111] text-white">
+    <main className="text-white">
       <div className="py-16 text-center">
         <p className="text-[10px] tracking-[0.25em] uppercase text-yellow-400/80 mb-3">
           Melbourne Property Styling
@@ -12,7 +12,7 @@ const AboutPage = () => {
           About Us
         </h1>
         <div className="w-20 h-px bg-yellow-400/70 mx-auto my-4" />
-        <p className="text-[10px] tracking-[0.18em] uppercase text-white/40">
+        <p className="text-[10px] tracking-[0.18em] uppercase text-white/60">
           30+ years transforming Melbourne properties
         </p>
       </div>
@@ -42,4 +42,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default ContactPage;
