@@ -1,9 +1,29 @@
 const Team = () => {
   const team = [
-    { name: "Ray Rodgers", role: "Director" },
-    { name: "Sally Rodgers", role: "Director" },
-    { name: "Tessa Lee", role: "Styling Manager" },
-    { name: "Caroline Anderson", role: "Business Development Manager" },
+    {
+      name: "Ray Rodgers",
+      role: "Director",
+      description:
+        "With over 30 years of experience in property presentation and interior styling, Ray has helped hundreds of Melbourne homes achieve outstanding sale results.",
+    },
+    {
+      name: "Sally Rodgers",
+      role: "Director",
+      description:
+        "Sally brings extensive experience in management and interiors, ensuring projects run smoothly and clients receive exceptional service",
+    },
+    {
+      name: "Tessa Lee",
+      role: "Styling Manager",
+      description:
+        "Tessa leads the styling team, carefully curtating furniture and décor to ensure every home is presented beautifully for the market",
+    },
+    {
+      name: "Caroline Anderson",
+      role: "Business Development Manager",
+      description:
+        "Caroline works closely with agents and clients, ensuring every project runs smoothly and every property recieves the attention it deserves",
+    },
   ];
   return (
     <div>
@@ -13,11 +33,14 @@ const Team = () => {
       <div className="grid grid-cols-2 gap-4">
         {team.map((member) => (
           <div className="bg-yellow-400/5 rounded-lg p-5" key={member.name}>
-            <p className="text-[11px] tracking-widest uppercase font-semibold text-primary mb-2">
+            <p className="text-[11px] tracking-widest uppercase font-semibold text-primary">
               {member.name}
             </p>
-            <p className="text-xs leading-relaxed text-white/60">
+            <p className="text-xs leading-relaxed text-white/60 mb-3">
               {member.role}
+            </p>
+            <p className="text-xs leading-relaxed text-white/60">
+              {member.description}
             </p>
           </div>
         ))}

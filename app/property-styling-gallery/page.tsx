@@ -8,7 +8,7 @@ const PropertyStylingGallery = () => {
   const files = fs.readdirSync(photosDir);
   return (
     <div className="bg-secondary pb-6">
-      <h1 className="text-center text-2xl font-semibold text-white py-4">
+      <h1 className="text-center text-6xl font-light text-white py-4 font-shelley mb-6">
         Property Styling Gallery
       </h1>
       <main className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12  max-w-360 mx-auto px-12">
