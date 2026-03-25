@@ -5,7 +5,7 @@ const Hero = () => {
       <div className="w-full relative  h-[60vh] md:h-[85vh] after:absolute after:inset-0 after:bg-linear-to-r after:from-black/60 after:via-black/20 after:to-transparent">
         {" "}
         <Image
-          src="/images/gallery/image18.jpg"
+          src="/images/gallery/18image.jpg"
           alt="Styled dining room with timber ceiling and gold abstract artwork"
           fill
           priority

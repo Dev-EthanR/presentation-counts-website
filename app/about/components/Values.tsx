@@ -1,5 +1,3 @@
-import React from "react";
-
 const Values = () => {
   const values = [
     {
@@ -23,7 +21,7 @@ const Values = () => {
   ];
   return (
     <div>
-      <p className="text-[10px] tracking-[0.2em] uppercase text-yellow-400/80 mb-4">
+      <p className="text-[10px] tracking-[0.2em] uppercase text-primary mb-4">
         Our Approach
       </p>
       <p className="text-sm leading-loose text-white/70 mb-14">
@@ -35,7 +33,7 @@ const Values = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-14">
         {values.map((v) => (
           <div key={v.title} className="bg-yellow-400/5 rounded-lg p-5">
-            <p className="text-[11px] tracking-widest uppercase font-semibold text-yellow-400 mb-2">
+            <p className="text-[11px] tracking-widest uppercase font-semibold text-primary mb-2">
               {v.title}
             </p>
             <p className="text-xs leading-relaxed text-white/60">

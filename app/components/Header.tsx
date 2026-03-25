@@ -70,7 +70,7 @@ const Header = () => {
             <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
           </div>
         </div> */}
-        <div className="h-0.5 bg-linear-to-r from-transparent via-yellow-400 to-transparent" />
+        <div className="h-0.5 bg-linear-to-r from-transparent via-primary to-transparent" />
       </header>
       <div className="hidden lg:flex justify-center py-4 bg-secondary lg:sticky top-0 z-50 ">
         <NavBar isOpen={isOpen} setIsOpen={setIsOpen} />

@@ -7,7 +7,7 @@ import { links } from "./Navbar";
 const Footer = () => {
   return (
     <>
-      <div className="h-0.5 bg-linear-to-r from-transparent via-yellow-400 to-transparent" />
+      <div className="h-0.5 bg-linear-to-r from-transparent via-primary to-transparent" />
       <footer className="bg-size-[83px] h-full lg:h-40 w-full text-2xl flex flex-col py-4 lg:py-8 text-white bg-secondary ">
         <ul className="flex flex-col lg:hidden text-base pl-12 pt-4">
           {links.map((link) => (
