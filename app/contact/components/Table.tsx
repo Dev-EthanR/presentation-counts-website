@@ -12,11 +12,11 @@ const Table = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-2 border border-primary/20 rounded-lg overflow-hidden mb-14">
+    <div className="flex flex-col justify-between   mb-14 h-full">
       {tableContent.map((stat) => (
         <div
           key={stat.phone}
-          className="text-center py-6 px-4 border-r border-primary/20 last:border-r-0"
+          className="text-center py-6 px-4 border  border-primary/20 h-full flex flex-col justify-center rounded-lg"
         >
           <p className="text-4xl text-primary font-light leading-none mb-1">
             {stat.title}

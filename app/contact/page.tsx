@@ -1,8 +1,9 @@
+import Image from "next/image";
 import Table from "./components/Table";
 
 const ContactPage = () => {
   return (
-    <main className=" text-white">
+    <main className="text-white">
       <div className="py-16 text-center">
         <p className="text-[10px] tracking-[0.25em] uppercase text-primary mb-3">
           Melbourne Property Styling
@@ -15,9 +16,15 @@ const ContactPage = () => {
           30+ years transforming Melbourne properties
         </p>
       </div>
-
-      <div className="max-w-3xl mx-auto px-6 py-14">
+      <div className="grid grid-cols-2 max-h-20 mx-auto px-6 py-14 max-w-175 gap-6">
         <Table />
+        <Image
+          src={"/images/gallery/22image.jpg"}
+          alt={""}
+          width={400}
+          height={400}
+          className="object-cover w-full h-full rounded-lg"
+        />
       </div>
     </main>
   );
