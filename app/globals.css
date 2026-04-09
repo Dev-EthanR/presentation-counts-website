@@ -14,6 +14,7 @@
   --font-shelley: var(--font-shelley);
   --font-montserrat: var(--font-montserrat);
   --font-cormorant: var(--font-cormorant);
+  --font-robotomono: var(--font-robotomono);
 }
 
 @layer components {

@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Cormorant_Garamond, Montserrat } from "next/font/google";
+import {
+  Inter,
+  Cormorant_Garamond,
+  Montserrat,
+  Roboto_Mono,
+} from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -13,6 +18,11 @@ const cormorant = Cormorant_Garamond({
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
+});
+
+const robotoMono = Roboto_Mono({
+  subsets: ["latin"],
+  variable: "--font-robotomono",
 });
 
 const inter = Inter({
@@ -46,7 +56,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${customFont.variable} ${cormorant.variable} ${montserrat.variable} `}
+        className={`${inter.className} ${customFont.variable} ${cormorant.variable} ${montserrat.variable} ${robotoMono.variable}`}
       >
         <div className="flex flex-col min-h-screen bg-[#21241e]">
           <Header />

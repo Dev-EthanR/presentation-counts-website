@@ -24,7 +24,7 @@ const Values = () => {
       <p className="text-[10px] tracking-[0.2em] uppercase text-primary mb-4">
         Our Approach
       </p>
-      <p className="text-sm leading-loose text-white/70 mb-14">
+      <p className="text-sm leading-loose text-white/70 mb-14 ">
         A professionally styled home stands out online and at inspections,
         helping attract more interest and maximise your sale result. We
         understand Melbourne&apos;s property market and know exactly what buyers

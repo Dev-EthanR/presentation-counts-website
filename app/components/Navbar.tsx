@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -41,6 +42,7 @@ const NavBar = ({ isOpen, setIsOpen }: Props) => {
               className={`hover:text-shadow-md text-shadow-background text-center lg:text-left
                 ${pathname === link.href && "text-primary"}
                 `}
+              onClick={() => setIsOpen(false)}
             >
               {link.name}
             </Link>
@@ -59,7 +61,13 @@ const NavBar = ({ isOpen, setIsOpen }: Props) => {
           aria-expanded={isOpen}
           aria-controls="menu"
         >
-          <img className="fillter-white w-10" src={menuStateImage} alt="" />
+          <Image
+            className="fillter-white w-10"
+            src={menuStateImage}
+            alt=""
+            width={40}
+            height={40}
+          />
         </button>
         {isOpen && (
           <>
