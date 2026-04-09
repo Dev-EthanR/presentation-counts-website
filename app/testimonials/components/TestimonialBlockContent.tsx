@@ -1,0 +1,40 @@
+import { JSX, ReactNode } from "react";
+import { ImQuotesRight } from "react-icons/im";
+
+interface Props {
+  title: string | JSX.Element;
+  children: ReactNode;
+  authorName: string;
+  authorLocation: string;
+}
+
+const TestimonialBlockContent = ({
+  title,
+  authorName,
+  authorLocation,
+  children,
+}: Props) => {
+  return (
+    <div className="flex flex-col items-start gap-9">
+      <ImQuotesRight className="text-primary text-4xl mt-6 hidden lg:block" />
+      <div>
+        <h2 className="text-xl lg:text-4xl text-white font-medium tracking-tight mb-4">
+          {title}
+        </h2>
+        <p className="text-white max-w-100 leading-6 lg:leading-8 font-light text-xs lg:text-sm ">
+          &quot;{children}&quot;
+        </p>
+      </div>
+      <div>
+        <p className="text-xs lg:text-sm  text-gray-300 mt-4 font-semibold mb-1.5">
+          {authorName}
+        </p>
+        <p className="text-xs lg:text-sm tracking-tight uppercase text-primary">
+          {authorLocation}
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default TestimonialBlockContent;

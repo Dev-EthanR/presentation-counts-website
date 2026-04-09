@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const TradeGallery = () => {
+const MakeoverGalleryPage = () => {
   return (
     <section className=" text-white py-16">
       <div className=" mx-auto px-6">
@@ -63,4 +63,4 @@ const TradeGallery = () => {
   );
 };
 
-export default TradeGallery;
+export default MakeoverGalleryPage;
