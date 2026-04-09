@@ -20,9 +20,8 @@ export const links: Link[] = [
     href: "/trade-gallery",
   },
   { name: "Testimonials", href: "/testimonials" },
-  { name: "Contact", href: "/contact" },
   { name: "About Us", href: "/about" },
-  { name: "About Us", href: "/abouttemp" },
+  { name: "Contact", href: "/contact" },
 ];
 
 const NavBar = ({ isOpen, setIsOpen }: Props) => {

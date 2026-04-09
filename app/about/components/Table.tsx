@@ -1,6 +1,6 @@
 const Table = () => {
   const tableContent = [
-    { number: "30+", label: "Years experience" },
+    { number: "20+", label: "Years experience" },
     { number: "500+", label: "Homes styled" },
   ];
   return (
