@@ -7,7 +7,8 @@ const Values = () => {
     },
     {
       title: "Buyer Psychology",
-      description: "We style for the target buyer, not personal taste.",
+      description:
+        "We style a property for the particular market required to stand out.",
     },
     {
       title: "Full Service",
