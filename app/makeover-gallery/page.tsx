@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import BeforeAfter from "./components/beforeAfter";
 
 const MakeoverGalleryPage = () => {
   return (
@@ -39,29 +39,7 @@ const MakeoverGalleryPage = () => {
             Call Us: 0420 254 767
           </Link>
         </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12 max-w-4xl mx-auto">
-          <div className="overflow-hidden rounded-lg shadow-lg">
-            <Image
-              src="/images/before-after/01before.png"
-              alt="Before"
-              width={600}
-              height={400}
-              className="object-cover w-full h-full"
-            />
-            <p className="text-center mt-2 text-gray-300">Before</p>
-          </div>
-          <div className="overflow-hidden rounded-lg shadow-lg">
-            <Image
-              src="/images/before-after/01after.png"
-              alt="After"
-              width={600}
-              height={400}
-              className=" w-full h-full"
-            />
-            <p className="text-center mt-2 text-gray-300">After</p>
-          </div>
-        </div>
+        <BeforeAfter />
       </div>
     </section>
   );

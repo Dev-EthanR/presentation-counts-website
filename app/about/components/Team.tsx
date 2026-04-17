@@ -16,13 +16,13 @@ const Team = () => {
       name: "Tessa Lee",
       role: "Styling Manager",
       description:
-        "Tessa leads the styling team, carefully curtating furniture and décor to ensure every home is presented beautifully for the market",
+        "Tessa leads the styling team, carefully curating furniture and décor to ensure every home is presented beautifully for the market",
     },
     {
       name: "Caroline Anderson",
       role: "Business Development Manager",
       description:
-        "Caroline works closely with agents and clients, ensuring every project runs smoothly and every property recieves the attention it deserves",
+        "Caroline works closely with agents and clients, ensuring every project runs smoothly and every property receives the attention it deserves",
     },
   ];
   return (

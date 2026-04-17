@@ -3,9 +3,10 @@ import TestimonialBox from "./TestimonialBox";
 interface Words {
   text: string;
   author: string;
+  colspan?: string;
 }
 
-const clientWords: Words[] = [
+export const testimonialContent: Words[] = [
   {
     text: "I have just viewed the property on realestate.com- it looks absolutely amazing, thank you so much for all you have done.",
     author: "Jane E- South Yarra",
@@ -41,17 +42,24 @@ const clientWords: Words[] = [
   {
     text: "We just wanted to say thank you, with the way you styled our apartment at 539 St Kilda Rd it looks amazing and it exceeded our expectations and we love the inviting way you put it all together. It showcases our home.",
     author: "Tony & Judy",
+    colspan: "col-span-2",
+  },
+  {
+    text: "I had previously used the services of Presentation Counts & would be happy to use them again. On this recent occasion with my apartment in South Yarra they arranged a full suite of services including, plastering, internal painting, new carpet & furniture styling. They were very professional and easy to work with. And I did end up achieving a great result for the sale of this apartment.",
+    author: "Jacqui",
+    colspan: "col-span-2",
   },
 ];
 
 const TestimonialBoxes = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-4 mx-auto max-w-310 gap-8 mb-12">
-      {clientWords.map((client) => (
+    <div className="grid grid-cols-1 lg:grid-cols-4 mx-auto max-w-310 gap-8 mb-12 ">
+      {testimonialContent.map((testimonial) => (
         <TestimonialBox
-          key={client.author}
-          text={client.text}
-          author={client.author}
+          key={testimonial.author}
+          text={testimonial.text}
+          author={testimonial.author}
+          style={testimonial.colspan}
         />
       ))}
     </div>
