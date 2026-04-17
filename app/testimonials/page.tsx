@@ -5,7 +5,7 @@ import TestimonialBoxes from "./components/TestimonialBoxes";
 const TestimonialPage = () => {
   return (
     <section className="pt-7 mx-4">
-      <div className="flex flex-col lg:flex-row justify-center lg:gap-20 lg:mb-20 ">
+      <div className="flex flex-col lg:flex-row justify-center lg:gap-20 lg:mb-20 mb-7.5">
         <TestimonialBlockHeader
           image={{
             src: "/images/gallery/02image.jpg",

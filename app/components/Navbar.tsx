@@ -72,7 +72,7 @@ const NavBar = ({ isOpen, setIsOpen }: Props) => {
         {isOpen && (
           <>
             <div className="w-full absolute top-0 left-0 h-full bg-secondary" />
-            <div className="absolute z-40 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+            <div className="absolute z-40 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full">
               {navLinks()}
             </div>
           </>

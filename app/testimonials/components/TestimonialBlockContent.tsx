@@ -14,7 +14,7 @@ const TestimonialBlockContent = ({
   children,
 }: Props) => {
   return (
-    <div className="flex flex-col items-start gap-9">
+    <div className="flex flex-col items-start gap-5 md:gap-9">
       <div>
         <h2 className="text-xl lg:text-4xl text-white font-medium tracking-tight mb-4">
           {title}

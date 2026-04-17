@@ -42,12 +42,12 @@ export const testimonialContent: Words[] = [
   {
     text: "We just wanted to say thank you, with the way you styled our apartment at 539 St Kilda Rd it looks amazing and it exceeded our expectations and we love the inviting way you put it all together. It showcases our home.",
     author: "Tony & Judy",
-    colspan: "col-span-2",
+    colspan: "lg:col-span-2",
   },
   {
     text: "I had previously used the services of Presentation Counts & would be happy to use them again. On this recent occasion with my apartment in South Yarra they arranged a full suite of services including, plastering, internal painting, new carpet & furniture styling. They were very professional and easy to work with. And I did end up achieving a great result for the sale of this apartment.",
     author: "Jacqui",
-    colspan: "col-span-2",
+    colspan: "lg:col-span-2",
   },
 ];
 
