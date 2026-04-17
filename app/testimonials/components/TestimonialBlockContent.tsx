@@ -1,5 +1,4 @@
 import { JSX, ReactNode } from "react";
-import { ImQuotesRight } from "react-icons/im";
 
 interface Props {
   title: string | JSX.Element;
@@ -16,7 +15,6 @@ const TestimonialBlockContent = ({
 }: Props) => {
   return (
     <div className="flex flex-col items-start gap-9">
-      <ImQuotesRight className="text-primary text-4xl mt-6 hidden lg:block" />
       <div>
         <h2 className="text-xl lg:text-4xl text-white font-medium tracking-tight mb-4">
           {title}

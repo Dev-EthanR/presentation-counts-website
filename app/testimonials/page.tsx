@@ -8,10 +8,9 @@ const TestimonialPage = () => {
       <div className="flex flex-col lg:flex-row justify-center lg:gap-20 lg:mb-20 ">
         <TestimonialBlockHeader
           image={{
-            src: "/images/gallery/04image.jpg",
+            src: "/images/gallery/02image.jpg",
             alt: "Styled living room with timber ceiling and gold abstract artwork",
           }}
-          quote="Tess did a great job styling our Balwyn unit resulting in multiple bidders and a successful auction sale."
         />
         <TestimonialBlockContent
           title={
@@ -39,7 +38,7 @@ const TestimonialPage = () => {
             src: "/images/gallery/15image.jpg",
             alt: "",
           }}
-          style="lg:h-120! lg:w-120! mt-20"
+          style="lg:h-120! lg:w-120!"
         />
         <TestimonialBlockContent
           title="An Effortless Process"
