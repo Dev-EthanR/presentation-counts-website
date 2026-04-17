@@ -5,7 +5,7 @@ import TestimonialBoxes from "./components/TestimonialBoxes";
 const TestimonialPage = () => {
   return (
     <section className="pt-7 mx-4">
-      <div className="flex flex-col lg:flex-row justify-center lg:gap-20 lg:mb-20 mb-7.5">
+      <div className="flex flex-col lg:flex-row justify-center lg:gap-22 lg:mb-20 mb-7.5 px-6">
         <TestimonialBlockHeader
           image={{
             src: "/images/gallery/02image.jpg",
@@ -32,7 +32,7 @@ const TestimonialPage = () => {
           opportunity for a timely and successful sale.
         </TestimonialBlockContent>
       </div>
-      <div className="flex flex-col lg:flex-row-reverse justify-center lg:gap-20 mb-20 mx-5">
+      <div className="flex flex-col lg:flex-row-reverse justify-center lg:gap-22 mb-20 mx-5">
         <TestimonialBlockHeader
           image={{
             src: "/images/gallery/15image.jpg",

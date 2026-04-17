@@ -19,7 +19,7 @@ const TestimonialBlockContent = ({
         <h2 className="text-xl lg:text-4xl text-white font-medium tracking-tight mb-4">
           {title}
         </h2>
-        <p className="text-white max-w-100 leading-6 lg:leading-8 font-light text-xs lg:text-sm ">
+        <p className="text-white lg:max-w-100 leading-6 lg:leading-8 font-light text-xs lg:text-sm ">
           &quot;{children}&quot;
         </p>
       </div>

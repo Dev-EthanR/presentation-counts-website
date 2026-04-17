@@ -13,7 +13,7 @@ interface Props {
 
 const TestimonialBlockHeader = ({ image, style }: Props) => {
   return (
-    <div className="max-w-130 relative">
+    <div className="lg:max-w-130 relative">
       <Image
         src={image.src}
         alt={image.alt}
@@ -21,7 +21,7 @@ const TestimonialBlockHeader = ({ image, style }: Props) => {
         height={600}
         className={clsx(
           style,
-          "object-cover max-w-130 w-full h-80 lg:h-150 mb-6 rounded-xl",
+          "object-cover lg:max-w-130 w-full h-80 lg:h-150 mb-6 rounded-xl",
         )}
       />
     </div>
