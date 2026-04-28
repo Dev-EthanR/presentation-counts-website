@@ -14,7 +14,7 @@ const MakeoverGalleryPage = () => {
           <p className="text-base md:text-lg text-gray-300 ">
             We will manage the works using professionals trades, supplying any
             updates you need, ensuring a smooth process, finished on time and
-            ready for oit to be styled for sale.
+            ready for out to be styled for sale.
           </p>
         </div>
 
