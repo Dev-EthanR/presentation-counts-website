@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FaInstagram } from "react-icons/fa";
 
 interface Props {
   isOpen: boolean;
@@ -34,7 +35,7 @@ const NavBar = ({ isOpen, setIsOpen }: Props) => {
   const navLinks = () => {
     return (
       <nav className="text-[#F5F5F2] col-span-full bg-secondary " id="menu">
-        <div className="flex flex-col gap-4  lg:flex-row lg:text-xl lg:justify-end xl:justify-start text-2xl lg:flex-wrap">
+        <div className="flex flex-col gap-4  lg:flex-row lg:text-xl lg:justify-end xl:justify-start text-2xl lg:flex-wrap lg:items-center">
           {links.map((link) => (
             <Link
               key={link.href}
@@ -47,6 +48,14 @@ const NavBar = ({ isOpen, setIsOpen }: Props) => {
               {link.name}
             </Link>
           ))}
+          <Link
+            href="https://www.instagram.com/presentationcounts/?hl=en"
+            aria-label="Follow us on Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className="text-2xl hover:text-primary transition-colors" />
+          </Link>
         </div>
       </nav>
     );
