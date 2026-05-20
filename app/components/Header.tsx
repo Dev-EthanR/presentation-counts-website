@@ -1,11 +1,9 @@
 "use client";
+import clsx from "clsx";
+import Image from "next/image";
 import { useState } from "react";
 import useLockBodyScroll from "../hooks/useLockBodyScroll";
-import Image from "next/image";
 import NavBar from "./Navbar";
-import clsx from "clsx";
-import Link from "next/link";
-import { FaInstagram } from "react-icons/fa";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
