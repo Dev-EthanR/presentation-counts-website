@@ -8,6 +8,7 @@ const Hero = () => {
           src="/images/gallery/23image.jpg"
           alt="Styled dining room with timber ceiling and gold abstract artwork"
           fill
+          fetchPriority="high"
           priority
           className="object-cover object-center select-none"
         />

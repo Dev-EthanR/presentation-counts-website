@@ -35,28 +35,31 @@ const NavBar = ({ isOpen, setIsOpen }: Props) => {
   const navLinks = () => {
     return (
       <nav className="text-[#F5F5F2] col-span-full bg-secondary " id="menu">
-        <div className="flex flex-col gap-4  lg:flex-row lg:text-xl lg:justify-end xl:justify-start text-2xl lg:flex-wrap lg:items-center">
+        <ul className="flex flex-col gap-4  lg:flex-row lg:text-xl lg:justify-end xl:justify-start text-2xl lg:flex-wrap lg:items-center">
           {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`hover:text-shadow-md text-shadow-background text-center lg:text-left
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                className={`hover:text-shadow-md text-shadow-background text-center lg:text-left
                 ${pathname === link.href && "text-primary"}
                 `}
-              onClick={() => setIsOpen(false)}
-            >
-              {link.name}
-            </Link>
+                onClick={() => setIsOpen(false)}
+              >
+                {link.name}
+              </Link>
+            </li>
           ))}
-          <Link
-            href="https://www.instagram.com/presentationcounts/?hl=en"
-            aria-label="Follow us on Instagram"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram className="text-2xl hover:text-primary transition-colors" />
-          </Link>
-        </div>
+          <li>
+            <Link
+              href="https://www.instagram.com/presentationcounts/?hl=en"
+              aria-label="Follow us on Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram className="text-2xl hover:text-primary transition-colors" />
+            </Link>
+          </li>
+        </ul>
       </nav>
     );
   };

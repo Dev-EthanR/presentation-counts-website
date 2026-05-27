@@ -26,9 +26,9 @@ const Header = () => {
             height={80}
           />
           <div className="text-center">
-            <div className="font-montserrat text-2xl md:text-3xl lg:text-6xl tracking-wide text-white font-extralight">
+            <p className="font-montserrat text-2xl md:text-3xl lg:text-6xl tracking-wide text-white font-extralight">
               Presentation Counts
-            </div>
+            </p>
             <p className="text-yellow-200/80 text-xs tracking-[0.3em] uppercase mt-1">
               Property Stylists
             </p>

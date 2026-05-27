@@ -25,7 +25,7 @@ const BeforeAfter = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12 max-w-4xl mx-auto">
       {images.map((image) => (
         <Fragment key={image.before}>
-          <div className="overflow-hidden rounded-lg shadow-lg relative aspect-square">
+          <figure className="overflow-hidden rounded-lg shadow-lg relative aspect-square">
             <Image
               src={image.before}
               alt="After"
@@ -33,11 +33,11 @@ const BeforeAfter = () => {
               height={400}
               className="object-cover h-full"
             />
-            <p className="text-center mt-2 text-3xl text-gray-100 text-shadow-md text-shadow-black absolute top-0 right-4 font-extrabold">
+            <figcaption className="text-center mt-2 text-3xl text-gray-100 text-shadow-md text-shadow-black absolute top-0 right-4 font-extrabold">
               Before
-            </p>
-          </div>
-          <div className="overflow-hidden rounded-lg shadow-lg relative aspect-square">
+            </figcaption>
+          </figure>
+          <figure className="overflow-hidden rounded-lg shadow-lg relative aspect-square">
             <Image
               src={image.after}
               alt="After"
@@ -45,10 +45,10 @@ const BeforeAfter = () => {
               height={400}
               className="object-cover h-full"
             />
-            <p className="text-center mt-2 text-3xl text-gray-100 text-shadow-md text-shadow-black absolute top-0 right-4 font-extrabold">
+            <figcaption className="text-center mt-2 text-3xl text-gray-100 text-shadow-md text-shadow-black absolute top-0 right-4 font-extrabold">
               After
-            </p>
-          </div>
+            </figcaption>
+          </figure>
         </Fragment>
       ))}
     </div>

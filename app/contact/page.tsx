@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Table from "./components/Table";
+import { Metadata } from "next";
 
 const ContactPage = () => {
   return (
     <main className="text-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 mx-auto px-6 py-14 max-w-175 gap-6">
+      <article className="grid grid-cols-1 md:grid-cols-2 mx-auto px-6 py-14 max-w-175 gap-6">
         <div className="order-1 lg:order-0">
           <Table />
         </div>
@@ -15,9 +16,21 @@ const ContactPage = () => {
           height={400}
           className="object-cover w-full h-full rounded-lg "
         />
-      </div>
+      </article>
     </main>
   );
 };
 
 export default ContactPage;
+
+export const metadata: Metadata = {
+  title: "Contact Us ",
+  description:
+    "Contact Presentation Counts for a property styling quote. Call Tess on 0406 988 011 for styling enquiries, or Caroline on 0420 254 767 for trade enquiries. Serving all Melbourne suburbs.",
+
+  openGraph: {
+    title: "Contact | Presentation Counts",
+    description:
+      "Get in touch with Melbourne's leading property stylists. Call for a quote today.",
+  },
+};

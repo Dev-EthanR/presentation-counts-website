@@ -1,11 +1,12 @@
+import { Metadata } from "next";
 import TestimonialBlockContent from "./components/TestimonialBlockContent";
 import TestimonialBlockHeader from "./components/TestimonialBlockHeader";
 import TestimonialBoxes from "./components/TestimonialBoxes";
 
 const TestimonialPage = () => {
   return (
-    <section className="pt-7 mx-4">
-      <div className="flex flex-col lg:flex-row justify-center lg:gap-22 lg:mb-20 mb-7.5 px-6">
+    <main className="pt-7 mx-4">
+      <section className="flex flex-col lg:flex-row justify-center lg:gap-22 lg:mb-20 mb-7.5 px-6">
         <TestimonialBlockHeader
           image={{
             src: "/images/gallery/02image.jpg",
@@ -31,8 +32,8 @@ const TestimonialPage = () => {
           comfortable that our property sale would be afforded the best
           opportunity for a timely and successful sale.
         </TestimonialBlockContent>
-      </div>
-      <div className="flex flex-col lg:flex-row-reverse justify-center lg:gap-22 mb-20 mx-5">
+      </section>
+      <section className="flex flex-col lg:flex-row-reverse justify-center lg:gap-22 mb-20 mx-5">
         <TestimonialBlockHeader
           image={{
             src: "/images/gallery/15image.jpg",
@@ -53,10 +54,30 @@ const TestimonialPage = () => {
           careful and the transformation happened surprisingly quickly. We would
           highly recommend their services.
         </TestimonialBlockContent>
-      </div>
+      </section>
       <TestimonialBoxes />
-    </section>
+    </main>
   );
 };
 
 export default TestimonialPage;
+
+export const metadata: Metadata = {
+  title: "Testimonials",
+  description:
+    "Read what Melbourne home owners say about Presentation Counts. Clients love our professional property styling — styled homes sell faster and achieve higher prices. 500+ homes styled.",
+
+  openGraph: {
+    title: "Client Testimonials | Presentation Counts Melbourne",
+    description:
+      "See what Melbourne home sellers say about our property styling service.",
+    images: [
+      {
+        url: "/images/gallery/02image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Styled Melbourne living room — Presentation Counts",
+      },
+    ],
+  },
+};

@@ -35,10 +35,23 @@ const customFont = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Presentation Counts",
+  title: {
+    default: "Presentation Counts",
+    template: "Presentation Counts | %s",
+  },
   description:
     "We have extensive experience in the presentation and furnishing of apartments, townhouses, residential developments and family homes.",
-  keywords: "Property Styling, Staging, Styling consultant",
+  keywords: [
+    "property styling Melbourne",
+    "home staging Melbourne",
+    "property presentation Melbourne",
+    "furniture hire Melbourne",
+    "real estate staging Melbourne",
+    "house staging Melbourne",
+    "property stylist Melbourne",
+    "styling homes for sale Melbourne",
+    "Presentation Counts",
+  ],
   openGraph: {
     title: "Presentation Counts",
     description:

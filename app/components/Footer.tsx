@@ -9,16 +9,18 @@ const Footer = () => {
     <>
       <div className="h-0.5 bg-linear-to-r from-transparent via-primary to-transparent" />
       <footer className="bg-size-[83px] h-full lg:h-40 w-full text-2xl flex flex-col py-4 lg:py-8 text-white bg-secondary ">
-        <ul className="flex flex-col lg:hidden text-base pl-12 pt-4">
-          {links.map((link) => (
-            <li
-              key={link.href}
-              className="hover:brightness-85 bottomBorder whitespace-nowrap"
-            >
-              <Link href={link.href}>{link.name}</Link>
-            </li>
-          ))}
-        </ul>
+        <nav>
+          <ul className="flex flex-col lg:hidden text-base pl-12 pt-4">
+            {links.map((link) => (
+              <li
+                key={link.href}
+                className="hover:brightness-85 bottomBorder whitespace-nowrap"
+              >
+                <Link href={link.href}>{link.name}</Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
         <div className="flex flex-col  md:flex-row justify-between  max-w-375 w-full mx-auto">
           <div className="flex flex-col pl-12 pt-2 lg:block">
             <Link
