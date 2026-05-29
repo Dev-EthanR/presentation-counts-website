@@ -93,6 +93,12 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${customFont.variable} ${cormorant.variable} ${montserrat.variable} ${robotoMono.variable}`}
       >
+        <a
+          href="#main-content"
+          className="sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-secondary focus:rounded focus:font-bold"
+        >
+          Skip to main content
+        </a>
         <div className="flex flex-col min-h-screen bg-[#21241e] font-robotomono">
           <script
             type="application/ld+json"
@@ -122,7 +128,9 @@ export default function RootLayout({
             }}
           />
           <Header />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1" id="main-content">
+            {children}
+          </main>
           <Footer />
         </div>
       </body>

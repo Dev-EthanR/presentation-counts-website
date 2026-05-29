@@ -18,9 +18,12 @@ const Table = () => {
           key={stat.phone}
           className="text-center py-6 px-4 border  border-primary/20 h-full flex flex-col justify-center rounded-lg"
         >
-          <p className="text-4xl text-primary font-light leading-none mb-1">
+          <a
+            href={`tel:${stat.title.replace(/\s/g, "")}`}
+            className="text-4xl text-primary font-light leading-none mb-1 hover:underline"
+          >
             {stat.title}
-          </p>
+          </a>
           <p className="text-lg uppercase text-white/80">{stat.name}</p>
           <p className="text-[10px] tracking-[0.15em] uppercase text-white/40">
             {stat.phone}

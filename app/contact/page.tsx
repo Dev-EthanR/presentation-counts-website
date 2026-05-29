@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 const ContactPage = () => {
   return (
-    <main className="text-white">
+    <div className="text-white">
       <article className="grid grid-cols-1 md:grid-cols-2 mx-auto px-6 py-14 max-w-175 gap-6">
         <div className="order-1 lg:order-0">
           <Table />
@@ -17,7 +17,7 @@ const ContactPage = () => {
           className="object-cover w-full h-full rounded-lg "
         />
       </article>
-    </main>
+    </div>
   );
 };
 

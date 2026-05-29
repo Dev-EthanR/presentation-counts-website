@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 const MakeoverGalleryPage = () => {
   return (
-    <main className=" text-white py-16">
+    <div className="text-white py-16">
       <div className=" mx-auto px-6">
         <header className="text-center space-y-6 max-w-3xl mx-auto ">
           <p className="text-base md:text-lg text-gray-300  ">
@@ -42,7 +42,7 @@ const MakeoverGalleryPage = () => {
         </section>
         <BeforeAfter />
       </div>
-    </main>
+    </div>
   );
 };
 

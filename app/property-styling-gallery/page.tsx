@@ -8,7 +8,7 @@ const photosDir = path.join(process.cwd(), "public/images/gallery");
 const PropertyStylingGallery = () => {
   const files = fs.readdirSync(photosDir);
   return (
-    <main className="py-6">
+    <div className="py-6">
       <header>
         <p className="text-center text-sm md:text-base leading-relaxed text-white/80 mb-12 max-w-261.25 mx-auto px-3">
           At Presentation Counts we believe the strategic art of preparing a
@@ -32,7 +32,7 @@ const PropertyStylingGallery = () => {
           />
         ))}
       </section>
-    </main>
+    </div>
   );
 };
 

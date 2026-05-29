@@ -72,18 +72,20 @@ const NavBar = ({ isOpen, setIsOpen }: Props) => {
           className={`${isOpen && "absolute top-0 right-0 z-40 mt-6 pr-5"}`}
           aria-expanded={isOpen}
           aria-controls="menu"
+          aria-label="Navigation menu"
         >
           <Image
             className="fillter-white w-10"
             src={menuStateImage}
             alt=""
+            aria-hidden={true}
             width={40}
             height={40}
           />
         </button>
         {isOpen && (
           <>
-            <div className="w-full absolute top-0 left-0 h-full bg-secondary" />
+            <div className="w-full absolute top-0 left-0 h-full bg-secondary" aria-hidden="true" />
             <div className="absolute z-40 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full">
               {navLinks()}
             </div>

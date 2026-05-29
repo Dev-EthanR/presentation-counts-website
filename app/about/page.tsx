@@ -4,7 +4,7 @@ import { Metadata } from "next";
 
 const AboutPage = () => {
   return (
-    <main className=" text-white ">
+    <div className="text-white">
       <article className="max-w-3xl mx-auto px-6 py-14 flex flex-col">
         <Image
           src={"/images/gallery/03image.jpg"}
@@ -15,7 +15,7 @@ const AboutPage = () => {
         />
         <Information />
       </article>
-    </main>
+    </div>
   );
 };
 

@@ -3,11 +3,11 @@ import Information from "./components/Information";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center">
+    <div className="flex flex-col items-center">
       <Hero />
       <section className="max-w-5xl mx-auto px-6 py-14 flex flex-col">
         <Information />
       </section>
-    </main>
+    </div>
   );
 }
