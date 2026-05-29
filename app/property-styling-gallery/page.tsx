@@ -42,7 +42,9 @@ export const metadata: Metadata = {
   title: "Styling Gallery",
   description:
     "Browse our property styling gallery showcasing 20+ years of beautifully staged Melbourne homes. See how Presentation Counts transforms properties to sell faster and at higher prices.",
-
+  alternates: {
+    canonical: "/property-styling-gallery",
+  },
   openGraph: {
     title: "Styling Gallery | Presentation Counts",
     description:

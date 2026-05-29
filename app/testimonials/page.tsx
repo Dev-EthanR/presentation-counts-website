@@ -66,7 +66,9 @@ export const metadata: Metadata = {
   title: "Testimonials",
   description:
     "Read what Melbourne home owners say about Presentation Counts. Clients love our professional property styling — styled homes sell faster and achieve higher prices. 500+ homes styled.",
-
+  alternates: {
+    canonical: "/testimonials",
+  },
   openGraph: {
     title: "Client Testimonials | Presentation Counts Melbourne",
     description:

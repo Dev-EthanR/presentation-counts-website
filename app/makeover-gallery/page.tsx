@@ -52,7 +52,9 @@ export const metadata: Metadata = {
   title: "Makeover Gallery",
   description:
     "See stunning before and after property makeovers by Presentation Counts.",
-
+  alternates: {
+    canonical: "/makeover-gallery",
+  },
   openGraph: {
     title: "Makeover Gallery | Presentation Counts",
     description:

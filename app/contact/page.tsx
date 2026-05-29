@@ -27,7 +27,9 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Contact Presentation Counts for a property styling quote. Call Tess on 0406 988 011 for styling enquiries, or Caroline on 0420 254 767 for trade enquiries. Serving all Melbourne suburbs.",
-
+  alternates: {
+    canonical: "/contact",
+  },
   openGraph: {
     title: "Contact | Presentation Counts",
     description:
