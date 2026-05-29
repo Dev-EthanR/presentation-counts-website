@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BeforeAfter from "./components/beforeAfter";
+import BeforeAfter from "../components/beforeAfter";
 import { Metadata } from "next";
 
 const MakeoverGalleryPage = () => {

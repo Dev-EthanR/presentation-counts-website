@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import TestimonialBlockContent from "./components/TestimonialBlockContent";
-import TestimonialBlockHeader from "./components/TestimonialBlockHeader";
-import TestimonialBoxes from "./components/TestimonialBoxes";
+import TestimonialBlockContent from "../components/testimonials/TestimonialBlockContent";
+import TestimonialBlockHeader from "../components/testimonials/TestimonialBlockHeader";
+import TestimonialBoxes from "../components/testimonials/TestimonialBoxes";
 
 const TestimonialPage = () => {
   return (

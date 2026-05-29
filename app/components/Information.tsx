@@ -1,7 +1,7 @@
 import React from "react";
-import Table from "../about/components/Table";
-import Team from "../about/components/Team";
-import Values from "../about/components/Values";
+import Table from "./about/Table";
+import Team from "./about/Team";
+import Values from "./about/Values";
 
 const Information = () => {
   return (

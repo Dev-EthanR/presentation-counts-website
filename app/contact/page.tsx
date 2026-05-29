@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Table from "./components/Table";
+import Table from "../components/contact/Table";
 import { Metadata } from "next";
 
 const ContactPage = () => {
@@ -10,8 +10,10 @@ const ContactPage = () => {
           <Table />
         </div>
         <Image
-          src={"/images/gallery/27image.jpg"}
-          alt={"Beautifully styled Melbourne home interior by Presentation Counts"}
+          src={"/images/gallery/33image.jpg"}
+          alt={
+            "Beautifully styled Melbourne home interior by Presentation Counts"
+          }
           width={400}
           height={400}
           className="object-cover w-full h-full rounded-lg "
@@ -36,7 +38,7 @@ export const metadata: Metadata = {
       "Get in touch with Melbourne's leading property stylists. Call for a quote today.",
     images: [
       {
-        url: "/images/gallery/27image.jpg",
+        url: "/images/gallery/33image.jpg",
         width: 1200,
         height: 630,
         alt: "Beautifully styled Melbourne home interior by Presentation Counts",
@@ -45,6 +47,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/gallery/27image.jpg"],
+    images: ["/images/gallery/33image.jpg"],
   },
 };
