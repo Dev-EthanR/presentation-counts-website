@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/property-styling-melbourne",
+      "destination": "/property-styling-gallery",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/styledandsold",
+      "destination": "/property-styling-gallery",
+      "permanent": true
+    },
+    {
+      "source": "/noupfrontfee",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

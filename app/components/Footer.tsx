@@ -24,12 +24,12 @@ const Footer = () => {
         <div className="flex flex-col  md:flex-row justify-between  max-w-375 w-full mx-auto">
           <div className="flex flex-col pl-12 pt-2 lg:block">
             <Link
-              href="mailto:presentationcounts@bigpond.com.au"
+              href="mailto:presentationcounts@bigpond.com"
               aria-label="Email us"
               className="flex items-center gap-2 hover:text-yellow-400 transition-colors"
             >
               <IoMdMail className="text-lg shrink-0" />
-              <span className="text-sm">presentationcounts@bigpond.com.au</span>
+              <span className="text-sm">presentationcounts@bigpond.com</span>
             </Link>
           </div>
           <div className="mx-12 mt-2">
