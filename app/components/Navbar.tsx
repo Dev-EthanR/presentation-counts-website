@@ -85,8 +85,11 @@ const NavBar = ({ isOpen, setIsOpen }: Props) => {
         </button>
         {isOpen && (
           <>
-            <div className="w-full absolute top-0 left-0 h-full bg-secondary" aria-hidden="true" />
-            <div className="absolute z-40 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full">
+            <div
+              className="w-full absolute top-0 left-0 h-full bg-secondary"
+              aria-hidden="true"
+            />
+            <div className="absolute z-40 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-full pl-10">
               {navLinks()}
             </div>
           </>
