@@ -49,13 +49,25 @@ const MakeoverGalleryPage = () => {
 export default MakeoverGalleryPage;
 
 export const metadata: Metadata = {
-  title: "Makeover gallery",
+  title: "Makeover Gallery",
   description:
     "See stunning before and after property makeovers by Presentation Counts.",
 
   openGraph: {
-    title: "Makeover gallery | Presentation Counts",
+    title: "Makeover Gallery | Presentation Counts",
     description:
       "Stunning before and after property transformations in Melbourne. See how we prepare homes for sale.",
+    images: [
+      {
+        url: "/images/before-after/01after.webp",
+        width: 1200,
+        height: 630,
+        alt: "Melbourne property after professional makeover by Presentation Counts",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/images/before-after/01after.webp"],
   },
 };

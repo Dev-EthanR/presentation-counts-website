@@ -35,6 +35,7 @@ const customFont = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.presentationcounts.com"),
   title: {
     default: "Presentation Counts",
     template: "Presentation Counts | %s",
@@ -52,12 +53,33 @@ export const metadata: Metadata = {
     "styling homes for sale Melbourne",
     "Presentation Counts",
   ],
+  icons: {
+    icon: "/images/icon.png",
+    shortcut: "/images/icon.png",
+    apple: "/images/icon.png",
+  },
   openGraph: {
     title: "Presentation Counts",
     description:
       "We have extensive experience in the presentation and furnishing of apartments, townhouses, residential developments and family homes.",
     type: "website",
     url: "https://www.presentationcounts.com/",
+    siteName: "Presentation Counts",
+    images: [
+      {
+        url: "/images/gallery/01image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Professionally styled Melbourne home by Presentation Counts",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Presentation Counts — Property Stylists Melbourne",
+    description:
+      "We have extensive experience in the presentation and furnishing of apartments, townhouses, residential developments and family homes.",
+    images: ["/images/gallery/01image.jpg"],
   },
 };
 
@@ -72,6 +94,33 @@ export default function RootLayout({
         className={`${inter.className} ${customFont.variable} ${cormorant.variable} ${montserrat.variable} ${robotoMono.variable}`}
       >
         <div className="flex flex-col min-h-screen bg-[#21241e] font-robotomono">
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                name: "Presentation Counts",
+                description:
+                  "Property styling and home staging services for Melbourne homeowners preparing to sell. 20+ years experience, 500+ homes styled.",
+                url: "https://www.presentationcounts.com",
+                telephone: "+61406988011",
+                email: "presentationcounts@bigpond.com.au",
+                image:
+                  "https://www.presentationcounts.com/images/gallery/01image.jpg",
+                logo: "https://www.presentationcounts.com/images/icon.png",
+                address: {
+                  "@type": "PostalAddress",
+                  addressLocality: "Melbourne",
+                  addressRegion: "VIC",
+                  addressCountry: "AU",
+                },
+                areaServed: { "@type": "State", name: "Victoria" },
+                priceRange: "$$",
+                sameAs: ["https://www.instagram.com/presentationcounts/"],
+              }),
+            }}
+          />
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

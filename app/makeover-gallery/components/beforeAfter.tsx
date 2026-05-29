@@ -23,12 +23,12 @@ const images = [
 const BeforeAfter = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12 max-w-4xl mx-auto">
-      {images.map((image) => (
+      {images.map((image, index) => (
         <Fragment key={image.before}>
           <figure className="overflow-hidden rounded-lg shadow-lg relative aspect-square">
             <Image
               src={image.before}
-              alt="After"
+              alt={`Melbourne property before styling — example ${index + 1}`}
               width={600}
               height={400}
               className="object-cover h-full"
@@ -40,7 +40,7 @@ const BeforeAfter = () => {
           <figure className="overflow-hidden rounded-lg shadow-lg relative aspect-square">
             <Image
               src={image.after}
-              alt="After"
+              alt={`Melbourne property after professional styling — example ${index + 1}`}
               width={600}
               height={400}
               className="object-cover h-full"

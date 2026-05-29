@@ -20,12 +20,12 @@ const PropertyStylingGallery = () => {
         </p>
       </header>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12  max-w-360 mx-auto px-12">
-        {files.map((file) => (
+        {files.map((file, index) => (
           <Image
             className="h-80 w-full object-cover"
             key={file}
             src={`/images/gallery/${file}`}
-            alt=""
+            alt={`Professionally styled Melbourne property — photo ${index + 1}`}
             width={500}
             height={500}
             loading="lazy"
@@ -55,5 +55,9 @@ export const metadata: Metadata = {
         alt: "Professionally styled Melbourne home by Presentation Counts",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/images/gallery/01image.jpg"],
   },
 };

@@ -37,7 +37,7 @@ const TestimonialPage = () => {
         <TestimonialBlockHeader
           image={{
             src: "/images/gallery/15image.jpg",
-            alt: "",
+            alt: "Professionally staged Melbourne home featured in client testimonial",
           }}
           style="lg:h-120! lg:w-120!"
         />
@@ -79,5 +79,9 @@ export const metadata: Metadata = {
         alt: "Styled Melbourne living room — Presentation Counts",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/images/gallery/02image.jpg"],
   },
 };
