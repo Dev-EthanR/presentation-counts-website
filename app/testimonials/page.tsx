@@ -6,6 +6,9 @@ import TestimonialBoxes from "../components/testimonials/TestimonialBoxes";
 const TestimonialPage = () => {
   return (
     <div className="pt-7 mx-4">
+      <h1 className="sr-only">
+        What Our Melbourne Clients Say
+      </h1>
       <section className="flex flex-col lg:flex-row justify-center lg:gap-22 lg:mb-20 mb-7.5 px-6">
         <TestimonialBlockHeader
           image={{
@@ -63,7 +66,7 @@ const TestimonialPage = () => {
 export default TestimonialPage;
 
 export const metadata: Metadata = {
-  title: "Testimonials",
+  title: "Client Testimonials — Melbourne Home Staging Reviews",
   description:
     "Read what Melbourne home owners say about Presentation Counts. Clients love our professional property styling — styled homes sell faster and achieve higher prices. 500+ homes styled.",
   alternates: {

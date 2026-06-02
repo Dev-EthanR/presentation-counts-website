@@ -4,7 +4,7 @@ import Information from "./components/Information";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Presentation Counts ",
+    absolute: "Presentation Counts — Property Stylists Melbourne",
   },
   description:
     "Melbourne's leading property styling and home staging service. With 20+ years of experience and 500+ homes styled, we help Melbourne homes sell faster and at higher prices.",

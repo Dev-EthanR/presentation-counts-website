@@ -106,7 +106,7 @@ export default function RootLayout({
             dangerouslySetInnerHTML={{
               __html: JSON.stringify({
                 "@context": "https://schema.org",
-                "@type": "LocalBusiness",
+                "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
                 name: "Presentation Counts",
                 description:
                   "Property styling and home staging services for Melbourne homeowners preparing to sell. 20+ years experience, 500+ homes styled.",
@@ -122,7 +122,20 @@ export default function RootLayout({
                   addressRegion: "VIC",
                   addressCountry: "AU",
                 },
-                areaServed: { "@type": "State", name: "Victoria" },
+                areaServed: [
+                  { "@type": "City", name: "Melbourne" },
+                  { "@type": "State", name: "Victoria" },
+                ],
+                hasOfferCatalog: {
+                  "@type": "OfferCatalog",
+                  name: "Property Styling Services",
+                  itemListElement: [
+                    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Property Styling Melbourne" } },
+                    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Home Staging Melbourne" } },
+                    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Furniture Hire Melbourne" } },
+                    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Property Renovation Melbourne" } },
+                  ],
+                },
                 priceRange: "$$",
                 sameAs: ["https://www.instagram.com/presentationcounts/"],
               }),

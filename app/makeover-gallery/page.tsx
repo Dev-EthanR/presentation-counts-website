@@ -7,15 +7,18 @@ const MakeoverGalleryPage = () => {
     <div className="text-white py-16">
       <div className=" mx-auto px-6">
         <header className="text-center space-y-6 max-w-3xl mx-auto ">
+          <h1 className="sr-only">
+            Property Makeover Gallery — Melbourne Renovations
+          </h1>
           <p className="text-base md:text-lg text-gray-300  ">
             In conjunction with our sister company &quot;Urban Renewal&quot; we
             can provide you with an itemised quotation on how best to makeover
             your property.
           </p>
           <p className="text-base md:text-lg text-gray-300 ">
-            We will manage the works using professionals trades, supplying any
+            We will manage the works using professional trades, supplying any
             updates you need, ensuring a smooth process, finished on time and
-            ready for out to be styled for sale.
+            ready to be styled for sale.
           </p>
         </header>
 
@@ -49,9 +52,9 @@ const MakeoverGalleryPage = () => {
 export default MakeoverGalleryPage;
 
 export const metadata: Metadata = {
-  title: "Makeover Gallery",
+  title: "Property Makeover Gallery — Melbourne Renovations",
   description:
-    "See stunning before and after property makeovers by Presentation Counts.",
+    "See Melbourne property makeovers by Presentation Counts and Urban Renewal. We manage painting, flooring, plumbing, electrical and full renovations — then style your home for a faster, higher-value sale.",
   alternates: {
     canonical: "/makeover-gallery",
   },

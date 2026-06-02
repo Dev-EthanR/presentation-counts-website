@@ -10,6 +10,9 @@ const PropertyStylingGallery = () => {
   return (
     <div className="py-6">
       <header>
+        <h1 className="sr-only">
+          Property Styling Gallery — Melbourne Homes
+        </h1>
         <p className="text-center text-sm md:text-base leading-relaxed text-white/80 mb-12 max-w-261.25 mx-auto px-3">
           At Presentation Counts we believe the strategic art of preparing a
           home for sale is to maximize its market appeal, aiming for a faster
@@ -39,7 +42,7 @@ const PropertyStylingGallery = () => {
 export default PropertyStylingGallery;
 
 export const metadata: Metadata = {
-  title: "Styling Gallery",
+  title: "Property Styling Gallery — Melbourne Homes",
   description:
     "Browse our property styling gallery showcasing 20+ years of beautifully staged Melbourne homes. See how Presentation Counts transforms properties to sell faster and at higher prices.",
   alternates: {

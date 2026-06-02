@@ -5,6 +5,13 @@ import { Metadata } from "next";
 const ContactPage = () => {
   return (
     <div className="text-white">
+      <div className="sr-only">
+        <h1>Contact Us</h1>
+        <p>
+          Ready to style your Melbourne home for sale? Get in touch with our
+          property styling team today for an obligation-free quote.
+        </p>
+      </div>
       <article className="grid grid-cols-1 md:grid-cols-2 mx-auto px-6 py-14 max-w-175 gap-6">
         <div className="order-1 lg:order-0">
           <Table />

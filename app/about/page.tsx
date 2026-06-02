@@ -6,6 +6,9 @@ const AboutPage = () => {
   return (
     <div className="text-white">
       <article className="max-w-3xl mx-auto px-6 py-14 flex flex-col">
+        <h1 className="sr-only">
+          About Presentation Counts
+        </h1>
         <Image
           src={"/images/gallery/03image.jpg"}
           alt={"Beautifully styled Melbourne living room by Presentation Counts"}
@@ -22,7 +25,7 @@ const AboutPage = () => {
 export default AboutPage;
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About — Melbourne Property Stylists",
   description:
     "Meet the Presentation Counts team — Melbourne's experienced property stylists. Ray and Sally Rodgers lead a team with 20+ years of styling expertise, helping Melbourne homes sell faster.",
   alternates: {
