@@ -52,6 +52,7 @@ export const metadata: Metadata = {
     "property stylist Melbourne",
     "styling homes for sale Melbourne",
     "Presentation Counts",
+    "Melbourne Property Stylists",
   ],
   icons: {
     icon: "/images/icon.png",
