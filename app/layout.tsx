@@ -53,6 +53,7 @@ export const metadata: Metadata = {
     "styling homes for sale Melbourne",
     "Presentation Counts",
     "Melbourne Property Stylists",
+    "Property Styling",
   ],
   icons: {
     icon: "/images/icon.png",
@@ -130,10 +131,34 @@ export default function RootLayout({
                   "@type": "OfferCatalog",
                   name: "Property Styling Services",
                   itemListElement: [
-                    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Property Styling Melbourne" } },
-                    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Home Staging Melbourne" } },
-                    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Furniture Hire Melbourne" } },
-                    { "@type": "Offer", itemOffered: { "@type": "Service", name: "Property Renovation Melbourne" } },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Property Styling Melbourne",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Home Staging Melbourne",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Furniture Hire Melbourne",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Property Renovation Melbourne",
+                      },
+                    },
                   ],
                 },
                 priceRange: "$$",
