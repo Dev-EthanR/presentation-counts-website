@@ -16,6 +16,11 @@
       "permanent": true
     },
     {
+      "source": "/gallery",
+      "destination": "/property-styling-gallery",
+      "permanent": true
+    },
+    {
       "source": "/noupfrontfee",
       "destination": "/",
       "permanent": true
