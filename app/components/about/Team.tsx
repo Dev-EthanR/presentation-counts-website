@@ -14,7 +14,7 @@ const Team = () => {
     },
     {
       name: "Tessa Lee",
-      role: "Styling Manager",
+      role: "Stylist/Operations Manager",
       description:
         "Tessa leads the styling team, carefully curating furniture and décor to ensure every home is presented beautifully for the market",
     },
